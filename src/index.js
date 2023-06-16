@@ -14,6 +14,9 @@ function fetchQuery(searchQuery) {
       console.log(data);
 
       for (let i = 0; i < queryData.length; i++) {
+        if (null) {
+          console.log("NULLOOOOO")
+        }
         console.log(queryData[i]);
         console.log(queryData[i].show.image.medium);
         console.log(queryData[i].show.name);
@@ -27,30 +30,24 @@ function fetchQuery(searchQuery) {
             </div> 
         </div>`;
 
-  
-
         document.querySelector(".data-container")
         .insertAdjacentHTML('beforeend', markup);
 
       }
 
-
     });
 }
+
+// if (null) {
+//   console.log("NULLOOOOO")
+// }
+
 
 
 searchButton.addEventListener("click", function (event) {
   event.preventDefault()
-
   const searchQuery = searchField.value;
-
   fetchQuery(searchQuery);
-
-  // queryData.array.forEach(element => {
-  //   console.log(element)
-  // });
-
-
 
 });
 
