@@ -7,13 +7,12 @@ body {
   width: 100%;
   background-color: #cfd8dc;
   margin: 20px;
-  display: flex;
   padding: 10px;
   border-radius: 6px;
   box-shadow: 3px 1px 14px 0px rgba(0, 0, 0, 0.75);
 }
 .show-info {
-  width: 100%;
+  width: 933px;
 }
 
 .center h1 {
